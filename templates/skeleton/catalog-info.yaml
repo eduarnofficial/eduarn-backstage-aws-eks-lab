@@ -2,8 +2,8 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 
 metadata:
-  name: ${{ values.name }}
-  description: EKS platform service
+  name: ${{ values.project_name }}
+  description: AWS EKS platform project
 
 spec:
   type: service
