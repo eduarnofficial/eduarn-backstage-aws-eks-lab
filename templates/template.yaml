@@ -3,8 +3,8 @@ kind: Template
 
 metadata:
   name: aws-eks-full-lab
-  title: AWS EKS Full End-to-End Lab
-  description: Backstage → Terraform → AWS → Kubernetes
+  title: EduArn AWS EKS Full End-to-End Lab
+  description: EduArn Backstage → Terraform → AWS → Kubernetes
 
 spec:
   owner: group:platform-team
