@@ -2,10 +2,10 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 
 metadata:
-  name: ${{ values.project_name }}
+  name: ${{ values.project_name | lower | replace(" ", "-") }}
   description: AWS EKS platform project
 
 spec:
   type: service
   lifecycle: experimental
-  owner: guests
+  owner: group:platform-team
