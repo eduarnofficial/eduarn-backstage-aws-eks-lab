@@ -3,7 +3,11 @@ kind: Component
 
 metadata:
   name: ${{ values.project_name | lower | replace(" ", "-") }}
+
   description: AWS EKS platform project
+
+  annotations:
+    backstage.io/kubernetes-id: ${{ values.project_name | lower | replace(" ", "-") }}
 
 spec:
   type: service
