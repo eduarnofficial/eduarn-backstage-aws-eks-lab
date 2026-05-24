@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: eduarn-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: eduarn-app
+  template:
+    metadata:
+      labels:
+        app: eduarn-app
+    spec:
+      containers:
+        - name: app
+          image: nginx
+          ports:
+            - containerPort: 80
